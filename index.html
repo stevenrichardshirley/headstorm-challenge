@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Company Name - Company Description</title>
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png">
+  </head>
+  <body>
+
+    <section class="maincontainer">
+<form class="contactus">
+    Name:
+    <br>
+    <input type="text" name="name" placeholder="John Smith">
+    <br>
+    <br>
+    Email:
+    <br>
+    <input type="text" name="email" placeholder="jsmith@email.com">
+    <br>
+    <br>
+    Message:
+    <br>
+    <textarea name="message" rows="30" cols="80" placeholder="Hello, I wanted to send you a message!"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+      </section>
+
+      <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+  <script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
+         ...
+      });
+  });
+  </script>
+
+  </body>
+</html>
