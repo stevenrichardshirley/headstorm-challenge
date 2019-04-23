@@ -60,7 +60,7 @@ font-weight: 700;
 }
 
 #home {
-  background-image: url("./images/contactimg.jpg");
+  background-image: url("./contactimg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 85%;
