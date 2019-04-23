@@ -8,34 +8,27 @@
   <body>
 
     <section class="maincontainer">
-<form class="contactus" action="./app.js" method="get">
+<form class="contactus" method="get">
     Name:
     <br>
-    <input type="text" name="name" placeholder="John Smith">
+    <input type="text" name="name" placeholder="John Smith" id="name">
     <br>
     <br>
     Email:
     <br>
-    <input type="text" name="email" placeholder="jsmith@email.com">
+    <input type="text" name="email" placeholder="jsmith@email.com" id="email">
     <br>
     <br>
     Message:
     <br>
-    <textarea name="message" rows="30" cols="80" placeholder="Hello, I wanted to send you a message!"></textarea>
+    <textarea name="message" rows="30" cols="80" placeholder="Hello, I wanted to send you a message!" id="message"></textarea>
     <br>
     <br>
     <input type="submit" value="Submit">
   </form>
       </section>
 
-      <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
-  <script>
-  grecaptcha.ready(function() {
-      grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
-         ...
-      });
-  });
-  </script>
+      <script src="app.js"></script>
 
   </body>
 </html>
